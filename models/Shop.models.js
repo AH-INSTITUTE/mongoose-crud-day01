@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
+// mongoose.set("useFindAndModify", true);
 
 const shopSchema = new Schema({
     name:{

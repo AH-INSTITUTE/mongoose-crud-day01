@@ -9,7 +9,7 @@ if(!db_URI){
 mongoose.connect(db_URI,
     {
         useNewUrlParser:true,
-        useFindAndModify:true,
+        useFindAndModify:false,
         useCreateIndex:true,
         useUnifiedTopology:true,
     },

@@ -27,11 +27,13 @@ shopController.getAllData = async (req, res, next) => {
 //get By Id
 shopController.getById = async (req, res, next) => {
     commonParams(res, () => shopServices.getById(req.query.id));
+    // console.log(req.query.id);
 };
 
 //patch By Id
 shopController.patchById = async (req, res, next) => {
     commonParams(res, () => shopServices.patchById(req.body));
+    // console.log(req.body);
 };
 
 //put By Id
